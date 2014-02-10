@@ -1,0 +1,22 @@
+<tal:block tal:define="isAnonymous view/isAnonymous;
+                       portal_url view/portal_url"
+     i18n:domain="quick.theme.sample">
+
+<div class="z-personalbar">
+  <div class="z-personalbar-menu">
+    <ul>
+      <tal:block content="structure pageelement:personalbar.items" />
+      <li class="z-personalbar-principal">
+        <span class="z-personalbar-principal-not-logged-in"
+              tal:condition="isAnonymous"
+              i18n:translate="">Not logged in &#8212;</span>
+        <tal:block condition="not:isAnonymous"
+                   content="string:${view/principal/title}:" />
+      </li>
+      <li tal:repeat="viewlet view/viewlets"
+          tal:content="structure viewlet/render"></li>
+    </ul>
+  </div>
+</div>
+
+</tal:block>

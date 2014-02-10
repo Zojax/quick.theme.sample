@@ -1,0 +1,192 @@
+/* zrt-cssregistry: */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,cite,
+pre,form,fieldset,textarea,p,blockquote,th,td{
+  margin:0;
+  padding:0;
+}
+body {
+  font: 69% fontFamily;
+  color: #454545;
+  background-color: #fff;
+}
+table {
+  font-size: 1em;
+  font-size: inherit;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 0;
+}
+fieldset {
+  border: 0;
+}
+img {
+  vertical-align: top;
+  border: 0;
+}
+address,caption,cite,code,dfn,var {
+  font-style: normal;
+  font-weight: normal;
+}
+cite {
+  font-style: italic;
+}
+caption,th {
+  text-align: left;
+}
+q:before, q:after {
+  content: '';
+}
+p {
+  margin: 0 0 0.75em 0;
+  line-height: 1.5em;
+}
+hr {
+  border: 0;
+  height: borderWidth;
+  color: globalBorderColor;
+  background-color: globalBorderColor;
+  margin: 0.5em 0 1em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.25em 0;
+  font: normal 1em headingFontFamily;
+  color: fontColor;
+  background-color: transparent;
+  border-bottom: borderWidth borderStyle globalBorderColor;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+  border-bottom: none;
+}
+h5 {
+  font-weight: bold;
+  font-size: 1em;
+  border-bottom: none;
+}
+h6 {
+  font-weight: bold;
+  font-size: fontSmallSize;
+  border-bottom: none;
+}
+ul {
+  line-height: 1.5em;
+}
+ol {
+  line-height: 1.5em;
+}
+li {
+  margin-bottom: 0.5em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 1em;
+}
+fieldset {
+  margin: 1em 0 1em 0;
+  padding: 0 1em 0 1em;
+  font-size: 1.1em;
+  border: borderWidth borderStyle globalBorderColor;
+}
+legend {
+  padding: 0.3em;
+  font-size: 0.9em;
+  background: globalBackgroundColor;
+}
+form {
+  border: 0;
+}
+label {
+  font-weight: bold;
+}
+textarea {
+  width: 80%;
+  color: inputFontColor;
+  font-size: 12px; /* can't use 1em - Safari 3 bug */
+  font-family: monospaceFontFamily;
+  border: borderWidth solid globalBorderColor;
+  resize: none;
+}
+input {
+  font-size: 1em;
+/*  font-family: fontFamily;*/
+  color: inputFontColor;
+  vertical-align: middle;
+/*  border: borderWidth solid globalBorderColor;*/
+}
+select {
+  font-size: 1em;
+  color: inputFontColor;
+  vertical-align: top;
+  background-color: white;
+/*  border: borderWidth solid globalBorderColor;*/
+}
+abbr, acronym, .explain {
+  color: fontColor;
+  cursor: help;
+  background-color: transparent;
+  border: 0;
+  border-bottom: borderWidth dotted fontColor;
+}
+q {
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: Baskerville, Georgia, serif;
+}
+blockquote {
+  margin-left: 0;
+  padding-left: 0.5em;
+  color: discreetColor;
+  border-left: 4px solid globalBorderColor;
+}
+code {
+  padding: 0 0.1em;
+  font-size: 1.2em;
+  font-family: monospaceFontFamily;
+  color: fontColor;
+  background-color: globalBackgroundColor;
+}
+pre {
+  margin-bottom: 0.5em;
+  padding: 1em;
+  font-size: 1em;
+  font-family: monospaceFontFamily;
+  color: fontColor;
+  overflow: auto;
+  background-color: globalBackgroundColor;
+  border: borderWidth borderStyle globalBorderColor;
+}
+ins {
+  color: green;
+  text-decoration: none;
+}
+del {
+  color: red;
+  text-decoration: line-through;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 14px;
+}

@@ -1,0 +1,229 @@
+/* zrt-cssregistry: */
+/* zrt-replace: "portal_url" tal"python:path('context/@@absolute_url')" */
+
+body {
+  scrollbar-base-color: globalBackgroundColor;
+  scrollbar-highlight-color: globalBackgroundColor;
+  scrollbar-track-color: evenRowBackgroundColor;
+  scrollbar-darkshadow-color: evenRowBackgroundColor;
+  scrollbar-3dlight-color: globalBorderColor;
+  scrollbar-shadow-color: globalBorderColor;
+  scrollbar-arrow-color: globalFontColor;
+  behavior: url("portal_url/@@/javascripts/csshover3.htc");
+}
+.rounded-corners,
+.text-block,
+.with-img div {
+  behavior: url("portal_url/@@/javascripts/PIE.htc");
+}
+textarea {
+    width: 97%;
+}
+#z-portal-top,
+#z-portal-header {
+  height: 1%;
+}
+#globalnav-menu li a {
+  background-position: left -39px;
+}
+table.listing td.top {
+  position: relative;
+  left: -1px;
+  top: -1px;
+}
+div#x-portal-columns div#x-column-one,
+div#x-portal-columns div#x-column-two {
+    overflow: hidden;
+}
+table.listing td {
+  padding: 0.4em 0.6em 0.4em 0.6em;
+}
+.infoTable td {
+  color: expression((this==this.parentNode.firstChild)?('discreetColor'):('fontColor'));
+  border-right: expression((this==this.parentNode.firstChild)?('borderWidth dashed discreetColor'):('none'));
+  border-top: expression((this.parentNode==this.parentNode.parentNode.firstChild)?('none'):('borderWidth dashed discreetColor'));
+  padding: 0.4em 0.6em 0.4em 0.6em;
+}
+.infoTable2 td {
+  color: expression((this==this.parentNode.firstChild)?('discreetColor'):('fontColor'));
+  background-color: expression((this==this.parentNode.firstChild)?('evenRowBackgroundColor'):('contentBackgroundColor'));
+  border-left: expression((this==this.parentNode.firstChild)?('borderWidth borderStyle globalBorderColor'):('none'));
+  border-top: expression((this.parentNode==this.parentNode.parentNode.firstChild)?('borderWidth borderStyle globalBorderColor'):('none'));
+  padding: 0.4em 0.6em 0.4em 0.6em;
+}
+.infoTable2 table {
+  width: 95%;
+}
+.blogger-footer li {
+  display: inline-block;
+  display: inline;
+}
+.z-personalbar,
+#top-logo-personalbar,
+#top-line {
+  zoom: 1;
+}
+.z-personalbar li { /* li:last-child emulation */
+  border-right-width: expression(this.nextSibling==null?'0':'1px');
+}
+
+#z-portal-footer ul li { /* li:last-child emulation */
+  border-right: expression(this.nextSibling==null?'0':'inherit');
+}
+.portlet-search .searchButton {
+  height: 15px;
+}
+#z-portal-top .portlet-search .searchButton {
+  height: 16px;
+}
+.z-cp-layout ul.z-listing li div {
+  float: left;
+}
+.z-listing li {
+  height: 1%;
+}
+label .z-form-fieldRequired {
+  position: relative;
+  height: 1%;
+  zoom: 1;
+}
+table.z-table td {
+  padding: 0.3em!important;
+  font-size: 0.9em!important;
+}
+table.z-table td.z-table-cell-min {
+  padding: 0!important;
+  text-align: center;
+  width: 25px!important;
+}
+#globalnav-menu td ul {
+  height: 1%;
+}
+#menutreecontents .expand {
+  height: 1%;
+}
+#z-space {
+  position: relative;
+}
+.z-portlet {
+  height: 1%;
+}
+.portlet-yourstuff .z-portlet-item,
+.portlet-actions .z-portlet-item {
+  height: 1%;
+}
+.portlet-askexpertform {
+  height: 1%;
+}
+.portlet-askexpertform #form-buttons-submit-portlet {
+  height: 20px!important;
+}
+.form-widgets-Date .x-form-field-wrap .widget-extjs-date,
+.form-widgets-Date .x-form-field-wrap .x-form-date-trigger,
+.form-widgets-Time .x-form-field-wrap .widget-extjs-time,
+.form-widgets-Time .x-form-field-wrap .x-form-trigger {
+  position: relative;
+  left: -17px;
+}
+
+
+/*
+** IE 6 Fixes
+*/
+
+* html body {
+  background: #b9c8cf none;
+}
+* html #visual-portal-additional-wrapper1 {
+  background: transparent url(../images/ie-border-gradient-left.gif) repeat-y top left;
+}
+* html #visual-portal-additional-wrapper2 {
+  background: transparent url(../images/ie-border-gradient-right.gif) repeat-y top right;
+}
+* html input {
+  margin-bottom: 1px;
+  border: expression((this.type=='checkbox')|(this.type=='radio') ? '0' : 'this.border');
+  background: expression((this.type=='checkbox')|(this.type=='radio') ? 'none' : this.background);
+}
+
+/* Fix for IE float bug */
+
+* html h1,
+* html h2,
+* html h3,
+* html h4,
+* html h5,
+* html h6,
+* html dd,
+* html .documentDescription,
+* html .portalMessage,
+* html .portalWarningMessage,
+* html .portalStopMessage,
+* html .listing,
+* html .documentframe {
+    height: 0.1%;
+}
+
+* html .pageTabs {
+  margin-top: 1px;
+}
+* html .contentViews {
+  margin-top: 1px;
+}
+* html .pageViews {
+  margin-top: 1px;
+}
+* html #x-columns-container {
+  width: auto;
+}
+* html .z-personalbar-menu ul li a:visited {
+  color: #454545!important;
+}
+
+#portal-column-one {
+/*  height: 230px;*/    /* avoid bug with broken left menu */
+  height: 1%;
+}
+#portal-column-two {
+  overflow: hidden;
+}
+#portal-columns {
+  height: 1%;
+}
+#portal-column-content { /* fix broken layout at personalspace profile */
+  overflow: hidden;
+}
+.z-wizard {
+  height: 1%;
+}
+
+.z-content-discussion-body {
+  height: 1%;
+}
+#z-content {
+  height: 1%;
+}
+
+#globalnav-menu td ul li ul li a:hover {
+/*  background-color: #485b63;*/
+}
+
+* html #portal-column-one {
+  height: 230px; /* min-height fix */
+}
+.corporate .portlet-personalbar {
+  height: 30px;
+}
+
+
+#top-logo-personalbar {
+  width: 980px;
+}
+#portal-content-banner-cell .zojax-portlet-manager,
+#portal-content-banner-cell .zojax-portlet {
+  float: left;
+}
+
+.rounded-corners {
+  float: left;
+}

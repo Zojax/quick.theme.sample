@@ -1,0 +1,41 @@
+
+<div id="z-portal-top">
+
+  <div id="top-line">
+
+    <tal:block tal:content="structure pageelement:portal.search" />
+
+    <div class="top-menu">
+      <ul>
+        <tal:block content="structure pageelement:topmenu.items" />
+      </ul>
+    </div>
+
+    <tal:block content="structure pageelement:portal.languages" />
+
+  </div>
+
+  <div id="top-logo-personalbar">
+    <tal:block content="structure pageelement:portal.logo" />
+
+    <tal:block tal:content="structure pageelement:portal.personalbar" />
+  </div>
+
+  <div id="z-portal-header">
+    <tal:block tal:content="structure pageelement:portal.tabs" />
+  </div>
+
+  <tal:block tal:content="structure pageelement:portal.breadcrumbs" />
+
+  <tal:comment condition="nothing">
+    <div
+       tal:condition="view/hasTopBanner"
+       tal:define="context view/headerContext"
+       tal:content="structure provider:banners.top">
+      <a href="#">
+        <img src="#" tal:attributes="src context/@@/images/header-banner.jpg" alt="" />
+      </a>
+    </div>
+  </tal:comment>
+
+</div>

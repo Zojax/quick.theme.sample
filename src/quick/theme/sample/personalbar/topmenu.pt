@@ -1,0 +1,5 @@
+<tal:block define="portal modules/zope.app.component.hooks/getSite">
+  <li tal:condition="portal/contact-us|nothing">
+    <a href="#" tal:attributes="href string:${portal/@@absolute_url}/contact-us/" i18n:translate="">Contact Us</a>
+  </li>
+</tal:block>

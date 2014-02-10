@@ -1,0 +1,906 @@
+/* zrt-cssregistry: */
+
+/*
+** Quick.Aero theme styles
+*/
+
+/*
+** COMMON STYLES
+*/
+
+.aero h1, .aero h2, .aero h3, .aero h4, .aero h5, .aero h6 {
+  font-family: fontFamily;
+}
+
+
+/*
+** STRUCTURE STYLES
+*/
+
+body.aero {
+  background: #fff none;
+}
+.aero #visual-portal-additional-wrapper1 {
+  padding: 0;
+  width: 980px;
+  background-image: none;
+}
+.aero #portal-columns {
+  overflow: hidden;
+  z-index: 98;
+}
+.aero #portal-column-one {
+  float: left;
+  width: 180px;
+  min-height: 230px;
+  background: transparent none;
+}
+.aero #portal-content-banner-cell {
+  float: left;
+  width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+.aero #portal-column-content {
+  float: left;
+  width: 570px; /*580px;*/
+  padding-top: 25px;
+}
+.aero.wizard #portal-content-banner-cell {
+  display: none;
+}
+.aero.wizard #portal-column-content {
+  width: 100%;
+}
+.aero #portal-column-two {
+  float: right; /*left;*/
+  width: 230px; /*220px*/
+}
+
+.aero #visual-portal-additional-wrapper2 {
+  padding: 0;
+  background-image: none;
+}
+
+
+/*
+** HEADER STYLES
+*/
+
+.aero #z-portal-top {
+  padding: 0;
+  z-index: 99;
+}
+.aero #z-portal-header {
+  padding: 1px 0 4px 0;
+  clear: both;
+  height: auto!important;
+  background: url(images/header-grad1.png) repeat-x left bottom!important;
+  border-top: 5px solid #a4adb3;
+}
+
+/* logo */
+
+.aero #z-portal-logo {
+  margin: 0;
+  padding: 9px 0 10px 17px;
+}
+.aero #z-portal-logo a {
+  display: inline!important;
+  height: auto!important;
+  width: auto!important;
+  position: static!important;
+  top: auto!important;
+  left: auto!important;
+}
+.aero #z-portal-logo img {
+  margin: 0;
+  display: inline!important;
+}
+
+/* top line */
+
+.aero #top-line {
+  overflow: hidden;
+  background-color: #ededed;
+}
+
+/* top-logo-personalbar */
+.aero #top-logo-personalbar {
+  position: relative;
+  min-height: 30px;
+}
+
+/* search box */
+
+.aero #z-portal-top .portlet-search {
+  margin: 3px 17px 3px 12px;
+  padding: 0;
+  background: transparent none;
+}
+.aero #z-portal-top .portlet-search .searchGadget {
+  width: 200px;
+  padding: 1px 1px 2px 4px;
+  margin: 0 2px 0 0;
+  line-height: 13px;
+  color: #66727a;
+  background-color: #fff;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb #bababa #bababa #dbdbdb;
+}
+.aero #z-portal-top .portlet-search .searchButton {
+  background: transparent url(images/button-search.png) no-repeat left 50%;
+  height: 18px;
+  padding: 0 8px 0 22px;
+  width: auto;
+}
+.aero #z-portal-top .portlet-search .searchButton span {
+  display: block;
+  padding-bottom: 2px;
+  color: #FFF;
+  font-family: Verdana, Arial;
+  font-size: 10px;
+}
+
+/* top menu */
+
+.aero .top-menu {
+  float: right;
+  margin-top: 5px;
+}
+.aero .top-menu ul,
+.aero .top-menu li {
+  margin: 0;
+  list-style: none;
+  display: inline;
+  text-align: left;
+  white-space: nowrap;
+}
+.aero .top-menu ul {
+  margin-left: -2px;
+}
+.aero .top-menu li,
+.aero .z-personalbar li {
+  background: url(images/header-actions-divider.png) no-repeat left center;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 10px;
+}
+.aero .top-menu li:first-child,
+.aero .z-personalbar li:first-child {
+  background: none;
+}
+.aero .top-menu li a {
+  color: #666666;
+}
+
+/* personalbar */
+
+.aero .z-personalbar {
+  width: 500px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 17px 4px 0;
+  padding: 0;
+  border: 0;
+  clear: both;
+  background-color: transparent;
+  vertical-align: bottom;
+}
+.aero .z-personalbar ul {
+  margin-left: -2px;
+}
+.aero .z-personalbar li a {
+  color: #66727a;
+  text-decoration: none;
+}
+.aero .z-personalbar li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* globalnav menu */
+
+.aero #globalnav-menu td {
+  background-image: none;
+}
+.aero #globalnav-menu td a {
+  cursor: pointer;
+}
+.aero #globalnav-menu #globalnav-tab-0 {
+  width: 0;
+}
+.aero #globalnav-menu td span a {
+  padding: 13px 0 5px 15px;
+}
+.aero #globalnav-menu td:hover {
+  background-color: #9badb9;
+}
+.aero #globalnav-menu td:hover span a {
+  color: #fff;
+}
+.aero #globalnav-menu {
+  width: auto;
+}
+
+/* breadcrumbs */
+
+.aero#section-site-overview .z-breadcrumbs {
+  display: block;
+}
+.aero .z-breadcrumbs {
+  margin: 0;
+  padding: 10px 14px;
+  font-size: 1em;
+  color: #66727a;
+}
+.aero .z-breadcrumbs a {
+  color: #66727a;
+}
+.aero .z-breadcrumbs a:last-child {
+  color: #00a4dc;
+}
+.aero #portal-column-content .z-breadcrumbs {
+  display: none;                              /* todo: remove from template */
+}
+
+
+/*
+** PORTLETS STYLES
+*/
+
+.aero .z-portlet {
+  background: #f8f8fa url(images/portlet-bg.png) repeat-x left top;
+}
+.aero .z-portlet .z-portlet-header {
+  margin: 0;
+  padding: 7px 15px;
+  color: #5b666e;
+  font-family: Arial,Helvetica,FreeSans,sans-serif; /* fontFamily */
+  font-size: 14px;
+  background: transparent none;
+}
+.portlet-recent-content .z-portlet-body {
+  padding: 0;
+}
+.portlet-recent-content .odd {
+    background-color: #fff;
+}
+.portlet-recent-content .t-title > a {
+    color: #D11D1D;
+    font-size: 1.4em;
+}
+
+/* portlet Proof of Delivery */
+
+.aero .portlet-quickonline-auth .z-portlet-body {
+  padding: 15px 10px 5px 15px;
+}
+.aero .quickonline-pod-form label {
+  display: none;
+}
+.aero .portlet-quickonline-auth input {
+  width: 125px;
+  font-size: 1em;
+}
+
+/* nav portlet */
+
+.portlet-menutree {
+  margin-bottom: 10px;
+}
+.aero .portlet-menutree {
+  background: url(images/portlet-nav-bg.png) no-repeat left top;
+}
+#menutreecontents collection collection collection a,
+#menutreecontents .collection .collection .collection a {
+  color: #66727a;
+  font-weight: normal;
+  display:block;
+}
+#menutreecontents .menutree-selected a {
+  font-weight: normal;
+  color: #00a4dc!important;
+}
+#menutreecontents .collection .collection .expand {
+  display: none;
+}
+#menutreecontents .collection .collection .collection {
+  font-size: 12px;
+  background: transparent url(images/portlet-nav-divider.png) no-repeat 20px bottom;
+  border: 0;
+}
+#menutreecontents .collection .collection .collection .expand {
+  display: block;
+  padding-left: 25px;
+  background: url(images/bullet-arrow-gray.png) no-repeat 15px 15px!important;
+}
+#menutreecontents .collection .collection .collection .have-selected-subobject a {
+  color: #66727a!important;
+}
+#menutreecontents .collection .collection .collection .expand.minus {
+  background-image: url(images/bullet-arrow-blue.png)!important;
+}
+#menutreecontents .collection .collection .collection .collection {
+  font-size: 11px;
+  background: none;
+}
+#menutreecontents .collection .collection .collection .collection .expand.minus {
+  background-image: none !important;
+}
+#menutreecontents .collection .collection .collection .collection .expand,
+#menutreecontents .collection .collection .collection .collection .selected {
+  padding-left: 27px;
+}
+#menutreecontents .collection .collection .collection .collection a {
+  padding-left: 7px;
+  color: #66727a;
+  display:block;
+}
+#menutreecontents .collection .collection .collection .collection .menutree-selected a {
+  display: block;
+  padding-left: 7px;
+  display:block;
+  text-decoration: underline;
+  line-height: 1.2em;
+  background: url(images/bullet-arrow-blue.png) no-repeat left 4px;
+}
+#menutreecontents .collection .collection .collection .collection .collection .expand a {
+  padding-left: 7px;
+  background: url(images/bullet-arrow-gray2.png) no-repeat left 3px;
+  margin-left: 13px;
+}
+
+/* static nav menu */
+
+.aero .portlet-menutree-static img {
+  width: 100%;
+}
+.aero .portlet-menutree-static .z-portlet-body ul li {
+  border: 0;
+}
+.aero .portlet-menutree-static .z-portlet-body ul li:last-child {
+  background-image: none;
+}
+.aero .portlet-menutree-static .z-portlet-body ul li a {
+  padding: 12px 0 12px 25px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #66727a;
+  background: url("images/bullet-arrow-blue.gif") no-repeat scroll 9% center transparent;
+}
+.aero .portlet-menutree-static .z-portlet-body ul li a:hover {
+  color: #00a4dc;
+}
+.quickstat .portlet-menutree-static .z-portlet-header {
+  /*display: none;*/
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-2 {
+  margin: 0 0 0 22px
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-2 li {
+  background: transparent none;
+  padding: 0 11px 7px 0;
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-2 li a {
+  background: url("images/bullet-arrow-blue.png") no-repeat scroll left center transparent;
+  font-size: 11px;
+  padding: 0 0 0 8px;
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-2 li a:hover {
+  color: #66727a;
+}
+
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-3 {
+  margin: 7px 0 0 25px;
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-3 li {
+  background: transparent none;
+  padding: 0 11px 7px 0;
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-3 li a {
+  background: transparent none;
+  font-size: 11px;
+  padding: 0;
+}
+.aero .portlet-menutree-static .z-portlet-body .portlet-menutree-static-second-3 li a:hover {
+  color: #66727a;
+}
+
+/* portlet featuredservices */
+
+.aero .portlet-featuredservices {
+  margin-bottom: 1em;
+}
+.aero .portlet-featuredservices .z-portlet-header {
+  background-image: none;
+}
+.aero .portlet-featuredservices .z-portlet-item {
+  padding: 8px 10px 8px 27px!important;
+  color: #66727a;
+  font-size: 12px;
+  background: url(images/bullet-arrow-gray.png) no-repeat 15px 13px;
+}
+.aero .portlet-featuredservices .z-portlet-item:last-child {
+  border: 0;
+}
+.aero .portlet-featuredservices .z-portlet-item a {
+  font-weight: normal;
+  color: #66727a;
+}
+
+/* sharecontent portlet */
+
+.aero .portlet-sharecontent .z-portlet-item,
+.aero .portlet-content-featured .z-portlet-item {
+  margin-bottom: 5px;
+  padding-bottom: 5px!important;
+  border: 0;
+}
+.aero .portlet-sharecontent-content-title,
+.aero .portlet-content-featured-title {
+  font-weight: normal;
+  font-size: 1.3em;
+  color: #5b666e;
+}
+.aero .portlet-sharecontent .z-portlet-item-details {
+  display: none;
+}
+
+/* personalbar portlet */
+
+.aero .portlet-personalbar {
+  background: transparent none;
+}
+
+/* actions portlet */
+
+.aero .portlet-actions {
+  background: transparent none;
+}
+
+/* portlet preferences */
+
+.aero .portlet-preferences .z-portlet-body {
+  padding: 10px;
+}
+.aero .portlet-preferences .z-portlet-item {
+  padding: 0 5px;
+}
+
+/* portlet askexpertform */
+
+.aero .portlet-askexpertform {
+  background: transparent url(images/portlet-ask-expert-bg.png) no-repeat right top;
+}
+
+/* portlet actions */
+
+.aero .portlet-actions {
+  margin: 20px 0 10px 0;
+}
+
+/* portlet search */
+
+.aero #portal-column-one .portlet-search {
+  background: transparent none;
+}
+.aero #portal-column-one .portlet-search .z-portlet-item {
+  padding: 20px 0 9px 12px;
+}
+.aero #portal-column-one .portlet-search .searchGadget {
+  margin: 0 3px 0 0;
+  width: 128px;
+}
+
+/* portlet banner */
+
+#portal-content-banner-cell .zojax-portlet,
+#portal-content-banner-cell .zojax-portlet-manager {
+  float: left;
+}
+
+/* portlet gray, bluish, slate-gray */
+.portlet-gray {
+  background-color: #ebe9e9;
+}
+.portlet-bluish {
+  background-color: #6ca8c4;
+}
+.portlet-slate-gray {
+  background-color: #508299;
+}
+.portlet-gray .portlet-header,
+.portlet-bluish .portlet-header,
+.portlet-slate-gray .portlet-header {
+  margin: 0;
+  padding: 18px 15px 12px 15px;
+  border: 0;
+  font: bold 1.2em Verdana, Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+.portlet-gray .portlet-header {
+  color: #414f58;
+}
+
+/* homepage portlets */
+
+.aero#section-site-overview .logistics,
+.aero#section-site-overview .services,
+.aero#section-site-overview .freetools,
+.aero#section-site-overview .logistics-blog,
+.aero#section-site-overview .global-logistics-locations,
+.aero#section-site-overview .solutions {
+  background: none repeat scroll 0 0 transparent;
+  margin: 15px 20px 15px 0;
+  padding: 8px 10px 15px 15px;
+}
+.aero#section-site-overview .logistics {
+  float: left;
+  margin-right: 0;
+  padding-right: 15px;
+  width: 187px;
+}
+.sterling_es#section-site-overview .logistics {
+  padding-right: 0;
+  width: 202px;
+}
+.aero#section-site-overview .services {
+  float: left;
+  margin-right: 11px;
+  width: 182px;
+}
+.aero#section-site-overview .solutions {
+  float: left;
+  margin-right: 11px;
+  width: 398px;
+}
+.aero#section-site-overview .freetools {
+  float: right;
+  margin-right: 0;
+  width: 250px;
+}
+.aero#section-site-overview .logistics,
+.aero#section-site-overview .services,
+.aero#section-site-overview .solutions,
+.aero#section-site-overview .freetools {
+  min-height: 146px;
+}
+.sterling_es#section-site-overview .freetools {
+  padding-bottom: 23px;
+}
+.aero#section-site-overview .logistics-blog {
+  float: left;
+  width: 398px;
+  margin-right: 11px;
+}
+.aero#section-site-overview .global-logistics-locations {
+  float: right;
+  margin: 9px 0 0 0;
+  padding: 0;
+  width: 230px;
+}
+.aero#section-site-overview .global-logistics-locations .z-portlet-header {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 1px solid #C3C9D5;
+  padding-left: 0;
+  padding-right: 0;
+}
+.aero#section-site-overview .logistics .portlet-sharecontent-content-title,
+.aero#section-site-overview .services .portlet-sharecontent-content-title,
+.aero#section-site-overview .freetools .portlet-sharecontent-content-title,
+.aero#section-site-overview .logistics-blog .portlet-sharecontent-content-title,
+.aero#section-site-overview .global-logistics-locations .portlet-sharecontent-content-title,
+.aero#section-site-overview .service-alerts .portlet-sharecontent-content-title,
+.aero#section-site-overview .service-alerts .learn-more,
+.aero#section-site-overview .solutions .portlet-sharecontent-content-title {
+  color: #48a2c4;
+  font-size: 12px;
+  line-height: 1.1em;
+}
+.aero#section-site-overview .service-alerts .portlet-sharecontent-content-title a {
+  border-bottom: 0;
+  color: #48a2c4;
+}
+.aero#section-site-overview .service-alerts .portlet-sharecontent-content-title a:hover {
+  text-decoration: underline;
+}
+.aero#section-site-overview .logistics .z-portlet-body,
+.aero#section-site-overview .services .z-portlet-body,
+.aero#section-site-overview .freetools .z-portlet-body,
+.aero#section-site-overview .logistics-blog .z-portlet-body,
+.aero#section-site-overview .global-logistics-locations .z-portlet-body,
+.aero#section-site-overview .solutions .z-portlet-body {
+  padding-top: 20px;
+}
+.aero#section-site-overview .logistics .z-portlet-item,
+.aero#section-site-overview .services .z-portlet-item,
+.aero#section-site-overview .freetools .z-portlet-item,
+.aero#section-site-overview .logistics-blog .z-portlet-item,
+.aero#section-site-overview .global-logistics-locations .z-portlet-item,
+.aero#section-site-overview .service-alerts .z-portlet-item,
+.aero#section-site-overview .solutions .z-portlet-item {
+  padding: 0 0 5px 0 !important;
+  margin-bottom: 0;
+}
+.aero#section-site-overview .logistics-blog .z-portlet-item,
+.aero#section-site-overview .solutions .z-portlet-item {
+  padding-bottom: 8px !important;
+}
+.aero#section-site-overview .logistics .z-portlet-item,
+.aero#section-site-overview .services .z-portlet-item,
+.aero#section-site-overview .freetools .z-portlet-item,
+.aero#section-site-overview .global-logistics-locations .z-portlet-item,
+.aero#section-site-overview .service-alerts .learn-more,
+.new-container a.read-more,
+.logistics-blog-new a.read-more {
+  padding-left: 23px !important;
+  margin-bottom: 4px;
+  background: url(images/bullet-arrow-red.png) no-repeat left top;
+}
+.aero#section-site-overview .logistics-blog .z-portlet-item {
+  padding-left: 12px !important;
+  background: url(images/bullet-arrow-red.gif) no-repeat left top;
+}
+.aero#section-site-overview .global-logistics-locations .z-portlet-body {
+  background: url(images/map-of-the-world.png) no-repeat 30px 7px !important;
+  padding-top: 120px;
+}
+.aero#section-site-overview .service-alerts {
+  padding: 10px;
+}
+.aero#section-site-overview .service-alerts .z-portlet-body {
+  padding-bottom: 0;
+}
+.aero#section-site-overview .service-alerts,
+.aero#section-site-overview .service-alerts .z-portlet-header {
+  background: transparent none;
+}
+.aero#section-site-overview .service-alerts .z-portlet-header {
+  border-bottom: 1px solid #C3C9D5;
+  padding-left: 0;
+  padding-right: 0;
+}
+.aero#section-site-overview .service-alerts .z-portlet-item {
+  padding-bottom: 15px !important;
+}
+.aero#section-site-overview .service-alerts .learn-more {
+  padding-bottom: 5px;
+}
+.aero#section-site-overview .service-alerts .learn-more a {
+  color: #48a2c4;
+}
+.aero#section-site-overview .logistics h2,
+.aero#section-site-overview .services h2,
+.aero#section-site-overview .freetools h2,
+.aero#section-site-overview .global-logistics-locations h2 {
+  font-size: 16px !important;
+}
+
+/* for all portlets */
+
+.aero .portlet-cols .z-portlet-item {
+  margin-right: 7px;
+}
+
+/*
+** CONTENT STYLES
+*/
+
+.aero #z-content h1 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3;
+  width: 25em;
+}
+.aero #z-content .portal-profile-view h1 {
+  width: 100%;
+}
+.aero .z-form-field {
+  position: relative;
+}
+.aero .z-form-field .error {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  font-size: 10px;
+  color: Red;
+  line-height: 1;
+}
+
+
+/*
+** PAGES
+*/
+
+/* homepage */
+
+.aero#section-site-overview #portal-column-one,
+.aero#section-site-overview .z-breadcrumbs {
+  display: none;
+}
+.aero#section-site-overview #portal-content-banner-cell {
+  /*float: none;*/
+  padding-top: 5px;
+  width: auto; /*100%;*/
+}
+.aero#section-site-overview #portal-column-content {
+  width: 740px;
+}
+.aero#section-site-overview #z-content {
+  margin: 0 15px;
+}
+
+.z-table {
+    width: 100%;
+}
+table.z-table th {
+  padding-left: 15px;
+  text-align: left;
+}
+.z-table td.z-table-cell-min {
+  padding: 0!important;
+  text-align: center;
+  width: 25px!important;
+}
+
+
+/* members page */
+
+.aero .personalspace-memberinfo dd {
+  line-height: 1.2;
+}
+
+/* personal space pages */
+
+.aero#section-profile-index-html #portal-column-content,
+.aero#section-personal-favorites-index-html #portal-column-content,
+.aero#section-personal-space-tags #portal-column-content,
+.aero#section-content-index-html #portal-column-content,
+.aero#section-profile-sendmessage-html #portal-column-content,
+.aero#section-personal-workspace-blog-index-html #portal-column-content {
+  width: 750px; /*760px;*/
+}
+.aero.wizard .z-table td.ctb-location {  /* undo page */
+  white-space: normal;
+}
+
+/* error pages (404 etc) */
+
+.aero .section-error-page#content {
+  padding: 0 15px;
+}
+
+/* sitemap page */
+
+.aero#section-site-sitemap-html #portal-column-one,
+.aero#section-site-sitemap-html #portal-column-two,
+.aero#section-site-sitemap-html #portal-content-banner-cell {
+  display: none;
+}
+.aero#section-site-sitemap-html #portal-column-content {
+  width: 100%;
+  padding-top: 10px;
+}
+.aero#section-site-sitemap-html #z-content h1 {
+  margin-bottom: 25px;
+}
+.z-sitemap a {
+  font-weight: bold;
+  color: #2c2c2c;
+}
+.z-sitemap a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+.z-sitemap ul ul {
+  margin: 0 0 0 6px;
+  padding: 0 0 0 5px;
+  border: 0;
+}
+.z-sitemap ul ul ul {
+  border-left: 1px dotted #ccc;
+}
+.z-sitemap ul ul a {
+  font-weight: normal;
+}
+
+.z-sitemap {
+  overflow: hidden;
+  padding-bottom: 2em;
+}
+.z-sitemap ul li {
+  float: left;
+  margin-right: 0.5em;
+}
+.z-sitemap ul ul li {
+  float: none;
+}
+
+
+/* undo page */
+
+.aero#section-personal-space-undo .z-table-container {
+  overflow-x: scroll;
+  width: 100%;
+}
+.aero table.z-table td.ctb-request {
+  white-space: normal;
+}
+
+
+/* search results page */
+
+.aero#section-site-search-html #portal-column-content,
+.aero#section-workspace-blog-search-html #portal-column-content {
+  width: 980px;
+}
+
+/* service alerts page */
+
+.aero #z-content .service-alerts-content {
+  background: transparent none;
+}
+.aero #z-content .service-alerts-content .z-portlet-body,
+.aero #z-content .service-alerts-content .z-portlet-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+.aero #z-content .service-alerts-content .portlet-servicealertscontent-content-title {
+  cursor: pointer;
+  color: #58595B;
+  padding: 7px 0 7px 33px;
+}
+.aero #z-content .service-alerts-content .open {
+  background: #F4F4F5 url(images/list-minus.png) no-repeat 10px center;
+}
+.aero #z-content .service-alerts-content .closed {
+  background: #F4F4F5 url(images/list-plus.png) no-repeat 10px center;
+}
+.aero #z-content .service-alerts-content .portlet-servicealertscontent-content-text {
+  padding: 0 33px;
+  font-size: 12px;
+  line-height: 1.59;
+}
+
+/* spaces */
+
+.aero .z-space-header h1 {
+  color: #D11D1D;
+  font: normal 18px/1.3em Arial, Helvetica, FreeSans, sans-serif !important;
+}
+
+/* hide edit links */
+a.zojax-portlet-edit-link,
+a.zojax-portlet-manager-edit-link {
+  display: none;
+}
+
+/*  */
+.clearfix:after, .ml-group:after, .marketing-library:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+html[xmlns] .clearfix, .clearfix,
+html[xmlns] .ml-group, .ml-group,
+html[xmlns] .marketing-library, .marketing-library {display:block;}*+html
+.clearfix, .ml-group, .marketing-library {
+  display: inline-block;
+}
+
+/* buttons */
+.button-field {
+    background: #f5f5f5 none;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    padding: 3px;
+}

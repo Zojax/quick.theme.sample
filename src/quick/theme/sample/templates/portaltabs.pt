@@ -1,0 +1,13 @@
+<ul id="globalnav" tal:define="tabs view/tabs">
+  <li class="first-level" tal:repeat="tab tabs">
+    <a tal:attributes="href python:tab.url or '#';
+                       class python:tab.isSelected() and 'selected' or None;
+                       id string:globalnav-tab-${repeat/tab/number}"
+       tal:content="tab/title" />
+    <div class="dropdown" tal:condition="tab/submenu">
+      <div class="rounded-corners">
+        <tal:block content="structure tab/@@portal.subtabs.2" />
+      </div>
+    </div>
+  </li>
+</ul>

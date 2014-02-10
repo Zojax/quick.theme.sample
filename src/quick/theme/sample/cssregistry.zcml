@@ -1,0 +1,61 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="quick.theme.sample">
+
+  <!-- default properties -->
+  <browser:cssregistry
+     title="Aero theme css properties"
+     layer=".interfaces.ISkinLayer">
+
+<!--
+    <property name="fontFamily" value='Verdana,"Bitstream Vera Sans","DejaVu Sans","Liberation Sans",Geneva,sans-serif' />
+    <property name="headingFontFamily" value='Georgia,"Bitstream Charter","Century Schoolbook L","Liberation Serif",Times,serif' />
+    <property name="monospaceFontFamily" value='Monaco,Courier,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono",monospace' />
+-->
+    <property name="fontFamily" value='Verdana, Arial, Helvetica, sans-serif' />
+    <property name="fontFamilySecond" value='Arial, Helvetica, FreeSans, sans-serif' />
+    <property name="fontFamilyThird" value='"Arial Narrow", Arial, Helvetica' />
+    <property name="headingFontFamily" value='Georgia, "Times New Roman",Times, serif' />
+    <property name="monospaceFontFamily" value='Monaco, "Courier New", Courier, monospace' />
+
+    <property name="fontColor" value="#454545" />
+    <property name="fontBaseSize" value="69%" />
+    <property name="fontSmallSize" value="90%" />
+
+    <property name="linkColor" value="#48a2c4" />
+    <property name="linkActiveColor" value="#48a2c4" />
+    <property name="linkVisitedColor" value="#666" />
+
+    <property name="backgroundColor" value="#fff" />
+    <property name="contentBackgroundColor" value="#fff" />
+
+    <property name="borderWidth" value="1px" />
+    <property name="borderStyle" value="solid" />
+    <property name="borderStyleAnnotations" value="solid" />
+
+    <property name="globalFontColor" value="#333" />
+    <property name="globalBorderColor" value="#dadada" />
+    <property name="globalBackgroundColor" value="#f5f5f5" />
+    <property name="globalExtraColor" value="#6088AE" />
+    <property name="globalExtraBorderColor" value="#6088AE" />
+
+    <property name="discreetColor" value="#76797C" />
+
+    <property name="contentViewBorderColor" value="#A5A5A5" />
+    <property name="contentViewBackgroundColor" value="#E4E4E4" />
+    <property name="contentViewFontColor" value="#898989" />
+
+    <property name="inputFontColor" value="#252525" />
+
+    <property name="textTransform" value="lowercase" />
+
+    <property name="evenRowBackgroundColor" value="#f9f9f9" />
+    <property name="oddRowBackgroundColor" value="transparent" />
+
+    <property name="notifyBorderColor" value="#e4978c" />
+    <property name="notifyBackgroundColor" value="#f9ddd9" />
+
+  </browser:cssregistry>
+
+</configure>

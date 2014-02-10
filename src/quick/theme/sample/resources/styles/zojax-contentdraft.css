@@ -1,0 +1,42 @@
+/* zrt-cssregistry: */
+
+@media all {
+
+  /* wizard buttons */
+
+  .z-draft-heading {
+    display: inline;
+    color: fontColor;
+    font-weight: bold;
+    font-size: 150% !important;
+    font-family: headingFontFamily;
+    line-height: 1.2em;
+    padding-top: 0;
+    border-bottom: 0;
+  }
+  .z-draft-heading a {
+    color: fontColor;
+  }
+  .z-draft-heading a:hover {
+    color: discreetColor;
+  }
+  .z-draft-heading-info {
+    border-bottom: borderWidth borderStyle globalBorderColor;
+  }
+  .z-draft-heading a.z-draft-heading-title {
+    border-bottom: borderWidth borderStyle globalBorderColor;
+  }
+  .z-draft-heading-location {
+    font-size: 80%;
+    font-style: italic;
+    font-weight: normal;
+  }
+  .z-draft-heading-location a {
+    font-style: normal;
+    border-bottom: borderWidth borderStyle globalBorderColor;
+  }
+  .z-draft-heading-location a:hover {
+    text-decoration: none;
+  }
+
+}

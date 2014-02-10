@@ -1,0 +1,22 @@
+<tal:title replace="structure pageelement:page.title" />
+
+<tal:favicon replace="structure pageelement:portal.favicon" />
+
+<meta name="generator" content="Zojax CMS - http://zojax.com" />
+
+<tal:metatags replace="structure pageelement:page.metatags" />
+
+<!-- Internet Explorer CSS Fixes -->
+<tal:iefixstart replace="structure string:&lt;!--[if lt IE 8]&gt;" />
+<style type="text/css" media="all"
+       tal:define="path context/++resource++styles/iefixes.css"
+       tal:content="string:@import url($path);"></style>
+<tal:iefixend replace="structure string:&lt;![endif]--&gt;" />
+
+<!-- Disable IE6 image toolbar -->
+<meta http-equiv="imagetoolbar" content="no" />
+
+<tal:block define="view python:view.__parent__" />
+<tal:elements repeat="element view/elements">
+    <tal:element replace="structure element/updateAndRender" />
+</tal:elements>

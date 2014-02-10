@@ -1,0 +1,17 @@
+<tal:block define="portal modules/zope.app.component.hooks/getSite">
+
+<li>
+    <a href="http://www.facebook.com/pages/Quick-International-Courier/72637736739" style="padding-right: 5px; text-decoration: none">
+        <img src="/@@/images/facebook.png" style="width: 17px; height: 17px;" />
+    </a>
+
+    <a href="http://twitter.com/#!/quickintl" style="padding-right: 5px; text-decoration: none">
+        <img src="/@@/images/twitter.png" style="width: 17px; height: 17px;" />
+    </a>
+
+    <a href="http://www.linkedin.com/company/quick-international-courier" style="text-decoration: none">
+        <img src="/@@/images/linkedin.png" style="width: 17px; height: 17px;" />
+    </a>
+</li>
+
+</tal:block>

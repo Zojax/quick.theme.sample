@@ -1,0 +1,17 @@
+<tal:block tal:content="structure pageelement:portal.ui.servicealert" />
+<div id="visual-portal-additional-wrapper1">
+  <div id="visual-portal-additional-wrapper2">
+    <div id="visual-portal-wrapper"
+   tal:define="context nocall:maincontext">
+
+      <tal:block define="view nocall:mainview"
+                 content="structure pageelement:portal.header" />
+
+      <tal:block content="structure view/render" />
+
+      <tal:block define="view nocall:mainview"
+                 content="structure pageelement:portal.footer" />
+
+    </div>
+  </div>
+</div>

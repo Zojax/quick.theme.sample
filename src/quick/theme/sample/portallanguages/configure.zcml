@@ -1,0 +1,22 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="quick.theme.sample">
+
+  <zojax:pageelement
+     title="Portal Tabs"
+     template="portallanguages.pt"
+     class=".portallanguages.PortalLanguages"
+     layer="..interfaces.ISkinLayer"
+     name="portal.languages"
+     />
+
+  <zojax:configlet
+     name="ui.portallangtool"
+     title="Portal languages"
+     description="Portal languages configuration."
+     schema=".interfaces.IPortalLanguagesConfiglet"
+     />
+
+</configure>

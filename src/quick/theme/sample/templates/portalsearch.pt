@@ -1,0 +1,22 @@
+<div class="z-portlet portlet-search" i18n:domain="quick.theme.sample"
+     tal:define="site modules/zope.app.component.hooks/getSite">
+  <h2 class="z-portlet-header" i18n:translate="">Search</h2>
+  <div class="z-portlet-body">
+    <form tal:attributes="action string:${site/@@absolute_url}/search.html" method="get" name="searchForm">
+
+      <!--[if IE]>
+        <input type="text" style="display: none;" disabled="disabled" size="1" />
+      <![endif]-->
+
+      <input type="text"
+             class="searchGadget"
+             name="form.widgets.text"
+             autocomplete="off"
+             value="" />
+      <button type="submit"
+              name="form.buttons.search"
+              class="searchButton"><span i18n:translate="">Search</span></button>
+
+    </form>
+  </div>
+</div>

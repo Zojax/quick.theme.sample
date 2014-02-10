@@ -1,0 +1,18 @@
+<tal:comment condition="nothing">
+<ul id="z-portal-languages" tal:define="langs view/getLanguages|python:[]"
+    tal:condition="python:len(langs)>1">
+    <li tal:repeat='lang view/getLanguages'>
+    <a tal:attributes='href lang/link'><span tal:attributes='class string:lang-icon lang-${lang/code}'></span></a>
+    </li>
+</ul>
+</tal:comment>
+<select
+    id="z-portal-languages"
+    name="select_menu"
+    onchange="if (this.value != '') { document.location.href = this.value; } return false;"
+    tal:define="langs view/getLanguages|python:[]"
+    tal:condition="python:len(langs)>1"
+    >
+    <option value="">Choose Language</option>
+    <option tal:repeat="lang view/getLanguages" tal:attributes="value lang/link" tal:content="lang/title">Lang Name</option>
+</select>

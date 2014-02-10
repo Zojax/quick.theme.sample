@@ -1,0 +1,176 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
+   i18n_domain="quick.theme.sample">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <!-- css registry -->
+  <include file="cssregistry.zcml" />
+
+  <include package=".portallanguages" />
+  <include package=".personalbar" />
+
+  <interface
+     name="quick.theme.sample"
+     interface=".interfaces.IQuickSampleSkin"
+     type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+
+  <zojax:skin
+     title="Quick sample theme"
+     name="quick.theme.sample"
+     layer=".interfaces.IQuickSampleSkin"
+     description="Sample theme for Quick." />
+
+  <!-- default logo -->
+  <zojax:ttwresource
+     title="Header: Logo - Data"
+     name="logo"
+     file="resources/images/logo.png"
+     layer=".interfaces.ISkinLayer"
+     />
+
+  <!-- default favicon -->
+  <zojax:ttwresource
+     title="Header: Favicon - Data"
+     name="favicon.ico"
+     type="image/x-icon"
+     file="resources/images/favicon.ico"
+     layer=".interfaces.ISkinLayer"
+     />
+
+  <!-- default powered by -->
+  <zojax:ttwelement
+     name="portal.footer"
+     title="Portal footer"
+     template="templates/poweredby.pt"
+     layer=".interfaces.ISkinLayer" />
+
+ <zojax:ttwelement
+     name="personalbar.items"
+     title="Personal bar additional menu items"
+     template="templates/personalbar.pt"
+     layer=".interfaces.ISkinLayer" />
+
+  <!-- resources -->
+
+  <zojax:resourcedirectory
+     name="images"
+     directory="resources/images"
+     layer=".interfaces.ISkinLayer" />
+
+  <zojax:resourcedirectory
+     name="fonts"
+     directory="resources/fonts"
+     layer=".interfaces.ISkinLayer" />
+
+  <zojax:resourcedirectory
+     name="javascripts"
+     directory="resources/javascripts"
+     layer=".interfaces.ISkinLayer" />
+
+  <zojax:resourcedirectory
+     name="styles"
+     directory="resources/styles"
+     mapping=".css:zrt"
+     layer=".interfaces.ISkinLayer" />
+
+  <!-- custom styles -->
+  <zojax:resourcepackage
+     type="stylesheet"
+     name="theme.css"
+     title="quick sample custom (Stylesheets)"
+     cache="dynamic"
+     library="theme"
+     require="common"
+     layer=".interfaces.ISkinLayer">
+         <resource path="styles/base.css" />
+         <resource path="styles/styles.css" />
+         <resource path="styles/theme.css" />
+  </zojax:resourcepackage>
+
+  <!-- form-styles.css -->
+  <zojax:resourceinclude
+     name="zojax-layoutform.css"
+     library="zojax" type="stylesheet"
+     layer=".interfaces.ISkinLayer"
+     file="resources/styles/zojax-form.css" filetype="zrt" />
+
+  <!-- zojax-wizard.css -->
+  <zojax:resourceinclude
+      name="zojax-wizard.css"
+      library="zojax"
+      type="stylesheet"
+      layer=".interfaces.ISkinLayer"
+      file="resources/styles/zojax-wizard.css" filetype="zrt" />
+
+  <!-- zojax content draft css -->
+  <zojax:resourceinclude
+      name="zojax-contentdraft.css"
+      library="zojax"
+      type="stylesheet"
+      layer=".interfaces.ISkinLayer"
+      file="resources/styles/zojax-contentdraft.css" filetype="zrt" />
+
+  <!-- page layout -->
+  <zojax:layout
+     name="page"
+     title="Page"
+     uid="quic.theme.sample.page"
+     for="zope.app.component.interfaces.ISite"
+     description="Page layout. It contains html headers, html body, etc."
+     template="templates/layout-page.pt"
+     layer=".interfaces.ISkinLayer"
+     class=".layoutpage.LayoutPage" />
+
+  <!-- root space layout -->
+  <zojax:layout
+     name="space"
+     layout="portal"
+     title="Space"
+     for="zojax.content.space.interfaces.IContentSpace"
+     template="templates/layout-space.pt"
+     layer=".interfaces.ISkinLayer" />
+
+  <!-- portal layout -->
+  <zojax:layout
+     name="portal"
+     layout="page"
+     title="Portal"
+     description="Portal layout for 'quick.theme.sample'"
+     uid="quick.theme.sample.portal"
+     for="zope.app.component.interfaces.ISite"
+     template="templates/layout-portal.pt"
+     layer=".interfaces.ISkinLayer" />
+
+
+  <!-- elements -->
+  <zojax:pageelement
+     name="page.headers"
+     provides="zojax.theme.default.interfaces.IPageHeaders"
+     template="templates/pageheaders.pt"
+     layer=".interfaces.ISkinLayer"
+     class="zojax.theme.default.pageheaders.PageHeaders" />
+
+  <zojax:pageelement
+     name="portal.header"
+     provides=".interfaces.IPortalHeader"
+     template="templates/portalheader.pt"
+     layer=".interfaces.ISkinLayer"
+     class=".portalheader.PortalHeader" />
+
+  <zojax:pageelement
+     title="Portal Tabs"
+     name="portal.tabs"
+     template="templates/portaltabs.pt"
+     class="zojax.ui.portaltabs.browser.portaltabs.PortalTabsView"
+     layer=".interfaces.ISkinLayer" />
+
+  <zojax:pageelement
+     name="portal.search"
+     template="templates/portalsearch.pt"
+     layer=".interfaces.ISkinLayer" />
+
+</configure>
