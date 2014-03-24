@@ -11,6 +11,35 @@
 .aero h1, .aero h2, .aero h3, .aero h4, .aero h5, .aero h6 {
   font-family: fontFamily;
 }
+.aero #z-content h3 {
+margin: 0 0 13px 0;
+color: #D11D1D;
+font: bold 17px/1em Arial,Helvetica,FreeSans,sans-serif;
+border: 0;
+}
+.aero #z-content p {
+    margin: 20px 0 0 0;
+}
+.aero .z-content-body {
+    font-size: 14px;
+}
+.aero .z-content-body ul {
+    margin: 0 0 10px 25px;
+    padding: 20px 0 15px 0;
+}
+.aero .z-content-body li {
+    margin: 0 0 5px 16px;
+    list-style-type: square;
+}
+.aero .z-content-body p a {
+    border: 0 none;
+    color: #197499;
+    text-decoration: none;
+}
+.aero .z-content-body p a:hover {
+    color: #D11D1D;
+    text-decoration: underline;
+}
 
 
 /*
@@ -19,6 +48,7 @@
 
 body.aero {
   background: #fff none;
+  font-size: 14px;
 }
 .aero #visual-portal-additional-wrapper1 {
   padding: 0;
@@ -686,15 +716,20 @@ body.aero {
 .aero .portlet-cols .z-portlet-item {
   margin-right: 7px;
 }
+.portlet-htmlsource .z-portlet-body {
+    background-color: #fff !important;
+}
 
 /*
 ** CONTENT STYLES
 */
 
-.aero #z-content h1 {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.3;
+.aero #z-content h1,
+.aero #z-content .z-content-body h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
   width: 25em;
 }
 .aero #z-content .portal-profile-view h1 {
