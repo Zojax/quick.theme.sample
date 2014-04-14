@@ -12,6 +12,7 @@
 
   <include package=".portallanguages" />
   <include package=".personalbar" />
+  <include package=".form" />
 
   <interface
      name="quick.theme.sample"

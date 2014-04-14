@@ -1,0 +1,13 @@
+<div class="z-form-field"
+     tal:define="error context/error|nothing;
+                 cls string:z-form-field ${context/id}"
+     tal:attributes="class python:error and (cls + ' error') or cls">
+  <label tal:attributes="for context/id">
+    <span class="z-form-fieldRequired" tal:condition="context/required"></span>
+    <span tal:replace="context/label">The Label</span>:
+  </label>
+  <div tal:condition="error" tal:replace="structure error/render">
+    The Error
+  </div>
+  <tal:block content="structure context/render" />
+</div>
