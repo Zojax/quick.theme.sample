@@ -87,6 +87,7 @@
   }
 
   .z-form-fieldRequired {
+    background: url(zojax-layoutform-required.gif) center left no-repeat;
     padding: 0 0 0 8px;
     color: backgroundColor;
   }
