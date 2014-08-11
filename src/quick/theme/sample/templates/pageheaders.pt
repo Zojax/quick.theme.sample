@@ -2,7 +2,7 @@
 
 <tal:favicon replace="structure pageelement:portal.favicon" />
 
-<meta name="generator" content="Quick Zope CMS - http://zojax.com" />
+<meta name="generator" content="QZ3 - http://zojax.com" />
 
 <tal:metatags replace="structure pageelement:page.metatags" />
 
